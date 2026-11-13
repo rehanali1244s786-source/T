@@ -1,0 +1,18 @@
+# Install:  sudo cp vps/musicbot.service /etc/systemd/system/
+#           (edit User and paths below first)
+#           sudo systemctl daemon-reload && sudo systemctl enable --now musicbot
+[Unit]
+Description=Telegram Music Bot (aiogram 3)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/music-bot-railway
+ExecStart=/home/ubuntu/music-bot-railway/venv/bin/python main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
