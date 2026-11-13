@@ -1,0 +1,7 @@
+aiogram>=3.13,<4
+yt-dlp
+httpx
+python-dotenv
+# Optional local BPM & musical key audio analysis (uncomment if needed):
+# librosa
+# numpy

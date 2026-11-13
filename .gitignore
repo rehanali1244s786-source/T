@@ -1,0 +1,11 @@
+.env
+*.json
+!railway.json
+!musicbot_data.example.json
+cookies.txt
+cookies_b64.txt
+downloads/
+__pycache__/
+*.py[cod]
+venv/
+.venv/

@@ -1,0 +1,10 @@
+.git
+.env
+__pycache__
+*.pyc
+venv
+.venv
+downloads
+cookies.txt
+cookies_b64.txt
+musicbot_data.json
